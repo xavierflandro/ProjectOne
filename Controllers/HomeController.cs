@@ -32,6 +32,12 @@ namespace ProjectOne.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Confirm()
+        {
+            return View();
+        }
+
         /*[HttpPost]
         public IActionResult SignUp(TimePeriod time)
         {
