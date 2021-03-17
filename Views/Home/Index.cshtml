@@ -1,8 +1,38 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿ 
+<div class="container">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row mt-2">
+
+        <div class="col-12" align="center">
+            <h2>Welcome To Appointment Whiz</h2>
+        </div>
+
+    </div>
+
+    <div class="row" align="center">
+
+        <div class="col-12 col-sm-5 m-auto p-auto">
+            <img src="~/img/phillyTemple.jpg" class="temple rounded" width="450"/>
+        </div>
+
+        <div class="col-12 col-sm-5 card m-auto p-3">
+            <h4>About Us</h4>
+            <p>Description of our service.</p>
+        </div>
+
+    </div>
+
+    <div class="row m-3" align="center">
+
+        <div class="col-sm-12 m-5">
+            <form asp-action="SignUp" method="get">
+                <button type="submit" class="btn btn-outline-primary font-weight-bold">Sign Up Now</button>
+            </form>
+        </div>
+
+    </div>
+
 </div>
+
+
+
