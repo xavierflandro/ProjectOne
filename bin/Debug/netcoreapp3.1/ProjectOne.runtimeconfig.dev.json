@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\haven\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\haven\\.nuget\\packages"
+=======
+      "/Users/gabi/.dotnet/store/|arch|/|tfm|",
+      "/Users/gabi/.nuget/packages"
+>>>>>>> * Startup.cs:
     ]
   }
 }

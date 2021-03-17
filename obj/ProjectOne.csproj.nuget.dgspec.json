@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\haven\\Documents\\Academics\\413\\Project1\\ProjectOne.csproj": {}
   },
   "projects": {
@@ -16,12 +17,27 @@
         "configFilePaths": [
           "C:\\Users\\haven\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "/Users/gabi/Projects/IS Classes/IS 413/ProjectOne/ProjectOne.csproj": {}
+  },
+  "projects": {
+    "/Users/gabi/Projects/IS Classes/IS 413/ProjectOne/ProjectOne.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gabi/Projects/IS Classes/IS 413/ProjectOne/ProjectOne.csproj",
+        "projectName": "ProjectOne",
+        "projectPath": "/Users/gabi/Projects/IS Classes/IS 413/ProjectOne/ProjectOne.csproj",
+        "packagesPath": "/Users/gabi/.nuget/packages/",
+        "outputPath": "/Users/gabi/Projects/IS Classes/IS 413/ProjectOne/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gabi/.nuget/NuGet/NuGet.Config"
+>>>>>>> * Startup.cs:
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +55,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +89,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+>>>>>>> * Startup.cs:
         }
       }
     }
