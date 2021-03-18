@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProjectOne.Models;
+using ProjectOne.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -32,13 +33,19 @@ namespace ProjectOne.Controllers
 
         public IActionResult SignUp()
         {
+            return View(_context);
+        }
+
+        [HttpGet]
+        public IActionResult Form()
+        {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Form(TimeSlot time)
+        public IActionResult Form(AppointmentViewModel appointmentViewModel)
         {
-            return View(time);
+            return View(appointmentViewModel);
         }
 
         [HttpPost]

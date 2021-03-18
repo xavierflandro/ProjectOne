@@ -12,5 +12,7 @@ namespace ProjectOne.Models
         { }
 
         public DbSet<Appointment> Appointments { get; set; }
+
+        public DbSet<TimeSlot> TimeSlots { get; set; }
     }
 }

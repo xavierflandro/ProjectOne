@@ -14,6 +14,12 @@ namespace ProjectOne
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
+        }
+
+        private static void CreateDbIfNotExists(IHost host)
+        {
+            throw new NotImplementedException();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
