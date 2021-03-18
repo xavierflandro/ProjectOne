@@ -11,6 +11,6 @@ namespace ProjectOne.Models
         public AppointmentListContext(DbContextOptions<AppointmentListContext> options) : base (options)
         { }
 
-        public DbSet<AppointmentItem> Appointments { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }

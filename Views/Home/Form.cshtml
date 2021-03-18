@@ -1,4 +1,4 @@
-﻿@*@model TimeSlot*@
+﻿@model AppointmentViewModel
 
 <div class="container">
 
@@ -15,12 +15,13 @@
     <div class="row" align="center">
         <div class="col-12 col-sm-5 card m-auto p-3">
             <h4>Group Details</h4>
-            <form asp-action="ConfirmTime" method="post" class="form-group">
-                @* id=@Model.TimeSlotID*@
+            <form asp-action="Confirm" method="post" class="form-group" id=@Model.Appointment.ApptId>
+                
                 <div class="form-group">
-                    <input type="hidden" /> @* asp-for="TimeSlotID"*@
+                    <input asp-for="Appointment.ApptId" type="hidden" />
                     <input type="hidden" name="returnUrl" /> @*value="@ViewContext.HttpContext.Request.PathAndQuery()"*@
-                    @*<label>Time of Tour: @x.Time</label>*@
+                    <label>Time of Tour: @x.Time</label>
+                    <input type="type" name="name" value="" />
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label">Time of Tour: </label>
                         <div class="col-sm-8">
@@ -58,6 +59,8 @@
                         Confirm Reservation
                     </button>
             </form>
+            <br />
+            <div asp-validation-summary="All"></div>
         </div>
     </div>
 </div>

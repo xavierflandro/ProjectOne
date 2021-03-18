@@ -1,4 +1,4 @@
-@*@model TimeSlot*@  
+@model IEnumerable<TimeSlot>
 
 <div class="container">
 
@@ -44,12 +44,12 @@
                             </button>
                         </td>
                     </tr>
-                    @*@foreach Time x in Model
+                    @foreach(var t in Model)
                     {
                         <tr>
-                            <td>@x.Time</td>
+                            <td>@t.Time</td>
                             <td>
-                              @*<form id="@Model.TimeSlotID" asp-page="/Confirm" method="post">
+                              <form id="@Model.TimeSlotID" asp-action="Form" method="post">
                                     <input type="hidden" asp-for="TimeSlotID" />
                                     <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
                                     <span class="cart-text p-1">
@@ -60,7 +60,7 @@
                                 </form>
                             </td>
                         </tr>
-                    }*@
+                    }
                 </tbody>
             </table>
         </div>

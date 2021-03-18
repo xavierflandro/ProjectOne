@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ProjectOne.Models
 {
-    public class AppointmentItem
+    public class Appointment
     {
         [Key]
         [Required]
@@ -21,6 +21,8 @@ namespace ProjectOne.Models
         public string Email { get; set; }
 
         //optional info
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+
+        public string Datetime { get; set; }
     }
 }

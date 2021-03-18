@@ -36,6 +36,44 @@ C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.dll
 C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.pdb
 C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.genruntimeconfig.cache
 C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.csproj.CopyComplete
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.exe
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.deps.json
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.runtimeconfig.json
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.runtimeconfig.dev.json
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.dll
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.pdb
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.Views.dll
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\bin\Debug\netcoreapp3.1\ProjectOne.Views.pdb
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.csprojAssemblyReference.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.AssemblyInfoInputs.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.AssemblyInfo.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.csproj.CoreCompileInputs.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.RazorAssemblyInfo.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.RazorAssemblyInfo.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\staticwebassets\ProjectOne.StaticWebAssets.Manifest.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\staticwebassets\ProjectOne.StaticWebAssets.xml
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\scopedcss\bundle\ProjectOne.styles.css
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.TagHelpers.input.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.TagHelpers.output.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.RazorCoreGenerate.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.RazorTargetAssemblyInfo.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.RazorTargetAssemblyInfo.cs
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.Views.pdb
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.dll
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.pdb
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.genruntimeconfig.cache
+C:\Users\rkamm\source\repos\ProjectOne2\ProjectOne\obj\Debug\netcoreapp3.1\ProjectOne.csproj.CopyComplete
+=======
 C:\Users\haven\Documents\Academics\413\Project1\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\haven\Documents\Academics\413\Project1\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\haven\Documents\Academics\413\Project1\bin\Debug\netcoreapp3.1\ProjectOne.exe
@@ -75,7 +113,6 @@ C:\Users\haven\Documents\Academics\413\Project1\obj\Debug\netcoreapp3.1\ProjectO
 C:\Users\haven\Documents\Academics\413\Project1\obj\Debug\netcoreapp3.1\ProjectOne.genruntimeconfig.cache
 C:\Users\haven\Documents\Academics\413\Project1\obj\Debug\netcoreapp3.1\ProjectOne.csproj.CopyComplete
 C:\Users\haven\Documents\Academics\413\Project1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Confirm.cshtml.g.cs
-=======
 C:/Users/xavie/source/repos/ProjectOne/bin/Debug/netcoreapp3.1/appsettings.Development.json
 C:/Users/xavie/source/repos/ProjectOne/bin/Debug/netcoreapp3.1/appsettings.json
 C:/Users/xavie/source/repos/ProjectOne/bin/Debug/netcoreapp3.1/ProjectOne.exe
@@ -192,3 +229,7 @@ C:/Users/xavie/source/repos/ProjectOne/obj/Debug/netcoreapp3.1/ProjectOne.csproj
 /Users/gabi/Projects/IS Classes/IS 413/ProjectOne/obj/Debug/netcoreapp3.1/ProjectOne.pdb
 /Users/gabi/Projects/IS Classes/IS 413/ProjectOne/obj/Debug/netcoreapp3.1/ProjectOne.genruntimeconfig.cache
 >>>>>>> * Startup.cs:
+>>>>>>> 05c9680cf93a8d02953cd23517d603e0e40887ad
+C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Home\Appointments.cshtml.g.cs
+C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Home\Form.cshtml.g.cs
+C:\Users\xavie\source\repos\ProjectOne\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs

@@ -12,40 +12,32 @@ namespace ProjectOne.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        //private FormContext _context { get; set; }
+        private AppointmentListContext _context { get; set; }
 
-        /*public HomeController(ILogger<HomeController> logger, FormContext context)
+        public HomeController(ILogger<HomeController> logger, AppointmentListContext context)
         {
             _logger = logger;
             _context = context;
-
-        }*/
+        }
 
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpGet]
         public IActionResult SignUp()
         {
             return View();
         }
 
-        [HttpGet]
-        public IActionResult Confirm()
+        [HttpPost]
+        public IActionResult Form(TimeSlot time)
         {
-            return View();
+            return View(time);
         }
 
-        /*[HttpPost]
-        public IActionResult SignUp(TimePeriod time)
-        {
-            return View("Form", time);
-        }*/
-
-        /*[HttpPost]
-        public IActionResult Form(Appointment appt)
+        [HttpPost]
+        public IActionResult Confirm(Appointment appt)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +49,8 @@ namespace ProjectOne.Controllers
             }
 
             return View();
-        }*/
+        }
+
 
         public IActionResult Privacy()
         {
