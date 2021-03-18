@@ -8,8 +8,8 @@ using ProjectOne.Models;
 namespace ProjectOne.Migrations
 {
     [DbContext(typeof(AppointmentListContext))]
-    [Migration("20210317211708_Start")]
-    partial class Start
+    [Migration("20210318035010_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -17,11 +17,14 @@ namespace ProjectOne.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.4");
 
-            modelBuilder.Entity("ProjectOne.Models.AppointmentItem", b =>
+            modelBuilder.Entity("ProjectOne.Models.Appointment", b =>
                 {
                     b.Property<int>("ApptId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Datetime")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -34,8 +37,8 @@ namespace ProjectOne.Migrations
                     b.Property<int>("GroupSize")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ApptId");
 

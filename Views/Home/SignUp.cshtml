@@ -18,49 +18,146 @@
 
         <div class="col-12 col-sm-5 card m-auto p-3">
             <h4>Available Times</h4>
+            <div class="row">
+
+
+            </div>
             <table>
+                
                 <tbody>
+                    <tr><td colspan="2">Monday</td></tr>
+
                     <tr>
-                        <td>8:00 A.M.</td>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Monday"))
+                        {
+                        <td>@t.Time</td>
                         <td>
-                            <button type="submit" class="btn btn-primary" style="float:right">
-                                Reserve
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>9:00 A.M.</td>
-                        <td>
-                            <button type="submit" class="btn btn-primary" style="float:right">
-                                Reserve
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>etc.</td>
-                        <td>
-                            <button type="submit" asp-page="/Confirm" class="btn btn-primary" style="float:right">
-                                Reserve
-                            </button>
-                        </td>
-                    </tr>
-                    @foreach(var t in Model)
-                    {
-                        <tr>
-                            <td>@t.Time</td>
-                            <td>
-                              <form id="@Model.TimeSlotID" asp-action="Form" method="post">
-                                    <input type="hidden" asp-for="TimeSlotID" />
-                                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                                    <span class="cart-text p-1">
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
                                     <button type="submit" class="btn btn-primary" style="float:right">
                                         Reserve
                                     </button>
-                                    </span>
-                                </form>
-                            </td>
-                        </tr>
-                    }
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Tuesday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Tuesday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Wednesday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Wednesday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Thursday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Thursday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Friday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Friday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Saturday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Saturday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
+                    <tr><td colspan="2">Sunday</td></tr>
+
+                    <tr>
+                        @foreach (var t in Model.Where(ts => ts.DayOfWeek == "Sunday"))
+                        {
+                        <td>@t.Time</td>
+                        <td>
+                            <form asp-action="Form" method="post">
+                                <input type="hidden" value="@t.Time" />
+                                <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                </span>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+
                 </tbody>
             </table>
         </div>

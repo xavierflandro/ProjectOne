@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj": {}
+    "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\ProjectOne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj": {
+    "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\ProjectOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj",
+        "projectUniqueName": "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\ProjectOne.csproj",
         "projectName": "ProjectOne",
-        "projectPath": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj",
+        "projectPath": "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\ProjectOne.csproj",
         "packagesPath": "C:\\Users\\xavie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\obj\\",
+        "outputPath": "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xavie\\AppData\\Roaming\\NuGet\\NuGet.Config",

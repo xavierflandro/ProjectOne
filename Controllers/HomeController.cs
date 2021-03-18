@@ -25,6 +25,11 @@ namespace ProjectOne.Controllers
             return View();
         }
 
+        public IActionResult Appointments()
+        {
+            return View(_context.Appointments);
+        }
+
         public IActionResult SignUp()
         {
             return View();

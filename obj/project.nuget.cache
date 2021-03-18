@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gw3UEKjMbAB/51BzlTmi5KC9f5nLU89lg9mYmu+JRYRhVseD3AycRnD2dZsqVBL3gS5X3/4JJj3G/JkzLQS4+A==",
+  "dgSpecHash": "u3s0fecpTtuk6LLVGR445XlOhuF8gx2vIzCUC0cBi29RwoScnPfFAnKpKaGyL0qv6NSijuO6q6hHfp6W+IaZow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj",
+  "projectFilePath": "C:\\Users\\xavie\\Desktop\\ProjectOne\\ProjectOne\\ProjectOne.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xavie\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\xavie\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -36,12 +36,5 @@
     "C:\\Users\\xavie\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
     "C:\\Users\\xavie\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\xavie\\source\\repos\\ProjectOne\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

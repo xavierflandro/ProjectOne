@@ -15,11 +15,14 @@ namespace ProjectOne.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.4");
 
-            modelBuilder.Entity("ProjectOne.Models.AppointmentItem", b =>
+            modelBuilder.Entity("ProjectOne.Models.Appointment", b =>
                 {
                     b.Property<int>("ApptId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Datetime")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -32,8 +35,8 @@ namespace ProjectOne.Migrations
                     b.Property<int>("GroupSize")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ApptId");
 

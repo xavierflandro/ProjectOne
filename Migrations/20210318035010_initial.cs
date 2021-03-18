@@ -2,7 +2,7 @@
 
 namespace ProjectOne.Migrations
 {
-    public partial class Start : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,8 @@ namespace ProjectOne.Migrations
                     GroupName = table.Column<string>(type: "TEXT", nullable: false),
                     GroupSize = table.Column<int>(type: "INTEGER", nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: false),
-                    Phone = table.Column<int>(type: "INTEGER", nullable: false)
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    Datetime = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
