@@ -19,151 +19,153 @@
                 <tbody>
                     <tr><td colspan="2"><strong>Monday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Monday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.DayOfWeek" name="slotDay" />
-                            <input type="hidden" value="@t.Time" name="slotTime" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                   }
-                
+                    <!--EACH BUTTON CHECKS THE VALUE OF THE 'AVAILABLE' ATTRIBUTE TO DETERMINE IF CLICKABLE, COLOR, AND INNER HTML-->
+                    <!--THIS IS TO INDICATE AVAILABLILITY OF TIMES LISTED OUT-->
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Monday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.DayOfWeek" name="slotDay" />
+                                    <input type="hidden" value="@t.Time" name="slotTime" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Tuesday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Tuesday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-                
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Tuesday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Wednesday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Wednesday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-               
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Wednesday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Thursday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Thursday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-                
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Thursday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Friday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Friday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-                
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Friday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Saturday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Saturday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-                
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Saturday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                     <tr><td colspan="2"><strong>Sunday</strong></td></tr>
 
-                    
-                        @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Sunday"))
-                        {
-                <tr>
-                    <td>@t.Time:00</td>
-                    <td>
-                        <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
-                            <span class="cart-text p-1">
-                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
-                                    @(t.Available ? "Reserve" : "Unavailable")
-                                </button>
-                            </span>
-                        </form>
-                    </td>
-                </tr>
-                }
-                
+
+                    @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Sunday"))
+                    {
+                        <tr>
+                            <td>@t.Time:00</td>
+                            <td>
+                                <form asp-action="Form" method="post">
+                                    <input type="hidden" value="@t.Time" />
+                                    <span class="cart-text p-1">
+                                        <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                            @(t.Available ? "Reserve" : "Unavailable")
+                                        </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
 
                 </tbody>
             </table>
