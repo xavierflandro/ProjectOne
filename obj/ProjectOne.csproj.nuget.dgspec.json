@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj": {}
+    "C:\\Users\\rkamm\\source\\repos\\ProjectOne2\\ProjectOne\\ProjectOne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj": {
+    "C:\\Users\\rkamm\\source\\repos\\ProjectOne2\\ProjectOne\\ProjectOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj",
+        "projectUniqueName": "C:\\Users\\rkamm\\source\\repos\\ProjectOne2\\ProjectOne\\ProjectOne.csproj",
         "projectName": "ProjectOne",
-        "projectPath": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\ProjectOne.csproj",
-        "packagesPath": "C:\\Users\\xavie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xavie\\source\\repos\\ProjectOne\\obj\\",
+        "projectPath": "C:\\Users\\rkamm\\source\\repos\\ProjectOne2\\ProjectOne\\ProjectOne.csproj",
+        "packagesPath": "C:\\Users\\rkamm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rkamm\\source\\repos\\ProjectOne2\\ProjectOne\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\xavie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rkamm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
