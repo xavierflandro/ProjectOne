@@ -50,6 +50,9 @@ namespace ProjectOne.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("Available")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("DayOfWeek")
                         .HasColumnType("TEXT");
 

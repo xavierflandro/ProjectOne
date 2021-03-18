@@ -9,7 +9,7 @@ using ProjectOne.Models;
 namespace ProjectOne.Migrations
 {
     [DbContext(typeof(AppointmentListContext))]
-    [Migration("20210318045429_initial")]
+    [Migration("20210318181046_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,6 +50,9 @@ namespace ProjectOne.Migrations
                 {
                     b.Property<int>("TimeId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Available")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("DayOfWeek")

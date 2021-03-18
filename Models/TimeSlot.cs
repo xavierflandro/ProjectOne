@@ -10,6 +10,7 @@ namespace ProjectOne.Models
         public int TimeId { get; set; }
         public string? DayOfWeek { get; set; }
         public int? Time { get; set; }
+        public bool Available { get; set; } = true; 
 
     }
 }

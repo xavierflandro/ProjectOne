@@ -23,13 +23,14 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Monday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
-                            <input type="hidden" value="@t.Time" />
+                            <input type="hidden" value="@t.DayOfWeek" name="slotDay" />
+                            <input type="hidden" value="@t.Time" name="slotTime" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -44,13 +45,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Tuesday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -65,13 +66,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Wednesday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -86,13 +87,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Thursday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -107,13 +108,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Friday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -128,13 +129,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Saturday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>
@@ -149,13 +150,13 @@
                         @foreach (var t in Model.TimeSlots.Where(ts => ts.DayOfWeek == "Sunday"))
                         {
                 <tr>
-                    <td>@t.Time</td>
+                    <td>@t.Time:00</td>
                     <td>
                         <form asp-action="Form" method="post">
                             <input type="hidden" value="@t.Time" />
                             <span class="cart-text p-1">
-                                <button type="submit" class="btn btn-primary" style="float:right">
-                                    Reserve
+                                <button type="submit" class="btn @(t.Available ? "btn-primary" : "btn-danger")" @(t.Available ? "" : "disabled") style="float:right">
+                                    @(t.Available ? "Reserve" : "Unavailable")
                                 </button>
                             </span>
                         </form>

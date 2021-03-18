@@ -1,9 +1,13 @@
 ﻿@model AppointmentListContext
 
+
+    <h1>Current Appointments</h1>
+    <br />
     <div>
         <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
+                        <th scope="col">Time:</th>
                         <th scope="col">Group Name</th>
                         <th scope="col">Group Size</th>
                         <th scope="col">Email</th>
@@ -15,6 +19,7 @@
                 @foreach (var a in Model.Appointments)
                 {
                     <tr>
+                        <td>@a.Datetime</td>
                         <td>@a.GroupName</td>
                         <td>@a.GroupSize</td>
                         <td>@a.Email</td>

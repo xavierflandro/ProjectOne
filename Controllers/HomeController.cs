@@ -28,7 +28,7 @@ namespace ProjectOne.Controllers
 
         public IActionResult Appointments()
         {
-            return View(_context.Appointments);
+            return View(_context);
         }
 
         public IActionResult SignUp()
@@ -43,9 +43,13 @@ namespace ProjectOne.Controllers
         }
 
         [HttpPost]
-        public IActionResult Form(AppointmentViewModel appointmentViewModel)
+        public IActionResult Form(string slotDay, string slotTime)
         {
-            return View(appointmentViewModel);
+            var appt = new Appointment
+            {
+                Datetime = slotDay + " " + slotTime + ":00"
+            };
+            return View(appt);
         }
 
         [HttpPost]
@@ -53,7 +57,16 @@ namespace ProjectOne.Controllers
         {
             if (ModelState.IsValid)
             {
-                //Update and save database
+                //update timeslot availability 
+                foreach(var t in _context.TimeSlots)
+                {
+                    if(t.DayOfWeek + " " + t.Time + ":00" == appt.Datetime)
+                    {
+                        t.Available = false;
+                    }
+                }
+
+                //Update and save appt
                 _context.Appointments.Add(appt);
                 _context.SaveChanges();
 

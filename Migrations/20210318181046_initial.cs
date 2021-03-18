@@ -30,7 +30,8 @@ namespace ProjectOne.Migrations
                     TimeId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     DayOfWeek = table.Column<string>(type: "TEXT", nullable: true),
-                    Time = table.Column<int>(type: "INTEGER", nullable: true)
+                    Time = table.Column<int>(type: "INTEGER", nullable: true),
+                    Available = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
