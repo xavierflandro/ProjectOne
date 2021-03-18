@@ -1,0 +1,83 @@
+@*@model TimeSlot*@  
+
+<div class="container">
+
+    <div class="row mt-2">
+
+        <div class="col-12" align="center">
+            <h2>Welcome To Appointment Whiz</h2>
+        </div>
+
+    </div>
+
+    <div class="row" align="center">
+
+        <div class="col-12 col-sm-5 m-auto p-auto">
+            <img src="~/img/phillyTemple.jpg" class="temple rounded" width="450" />
+        </div>
+
+        <div class="col-12 col-sm-5 card m-auto p-3">
+            <h4>Available Times</h4>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>8:00 A.M.</td>
+                        <td>
+                            <button type="submit" class="btn btn-primary" style="float:right">
+                                Reserve
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9:00 A.M.</td>
+                        <td>
+                            <button type="submit" class="btn btn-primary" style="float:right">
+                                Reserve
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>etc.</td>
+                        <td>
+                            <button type="submit" asp-page="/Confirm" class="btn btn-primary" style="float:right">
+                                Reserve
+                            </button>
+                        </td>
+                    </tr>
+                    @*@foreach Time x in Model
+                    {
+                        <tr>
+                            <td>@x.Time</td>
+                            <td>
+                              @*<form id="@Model.TimeSlotID" asp-page="/Confirm" method="post">
+                                    <input type="hidden" asp-for="TimeSlotID" />
+                                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                                    <span class="cart-text p-1">
+                                    <button type="submit" class="btn btn-primary" style="float:right">
+                                        Reserve
+                                    </button>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>
+                    }*@
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="row m-3" align="center">
+
+        <div class="col-sm-12 m-5">
+            <form asp-action="SignUp" method="get">
+                <button type="submit" class="btn btn-outline-primary font-weight-bold">Sign Up Now</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+

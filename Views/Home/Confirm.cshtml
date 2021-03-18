@@ -1,0 +1,66 @@
+﻿@*@model TimeSlot*@
+
+<div class="container">
+
+    <div class="row mt-2">
+
+        <div class="col-12" align="center">
+            <h2>Confirm Reservation</h2>
+            <br />
+            <br />
+        </div>
+
+    </div>
+
+    <div class="row" align="center">
+        <div class="col-12 col-sm-5 card m-auto p-3">
+            <h4>Group Details</h4>
+            <form asp-action="ConfirmTime" method="post" class="form-group">
+                @* id=@Model.TimeSlotID*@
+                <div class="form-group">
+                    <input type="hidden" /> @* asp-for="TimeSlotID"*@
+                    <input type="hidden" name="returnUrl" /> @*value="@ViewContext.HttpContext.Request.PathAndQuery()"*@
+                    @*<label>Time of Tour: @x.Time</label>*@
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Time of Tour: </label>
+                        <div class="col-sm-8">
+                            <input readonly class="form-control-plaintext" value="8:00 A.M." />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Name of Group: </label> @* asp-for="GroupName"*@
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" /><br />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Size of Group: </label> @* asp-for="GroupSize"*@
+                        <div class="col-sm-8">
+                            <input class="form-control" type="number" /><br />
+                        </div>
+                    </div>
+                    <h5>Contact Information</h5>
+                    <div class="form-group">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Email: </label> @* asp-for="Email"*@
+                            <div class="col-sm-8">
+                                <input class="form-control" type="email" /><br />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Phone Number: </label> @* asp-for="PhoneNumber"*@
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" /> @* asp-for="PhoneNumber"*@<br />
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Confirm Reservation
+                    </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
